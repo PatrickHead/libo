@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libcsv
+Description: A C language library to manage CSV files
+URL: NONE
+Version: 1.0.0
+Requires: 
+Libs: -L${exec_prefix}/lib -lcsv
+Cflags: -I${prefix}/include

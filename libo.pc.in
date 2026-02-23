@@ -1,0 +1,12 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libcsv
+Description: A C language library to manage CSV files
+URL: NONE
+Version: @VERSION@
+Requires: 
+Libs: -L@libdir@ -lcsv
+Cflags: -I@includedir@
