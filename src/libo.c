@@ -4731,11 +4731,14 @@ static void libo_xl_strings_count_action(avl_node *n) { ++_strings_count; }
 
 static void libo_xl_strings_add_action(avl_node *n)
 {
+  string_node *sn;
   string *str;
 
   if (!n) return;
 
-  str = (string *)n->value;
+  sn = (string_node *)n;
+
+  str = &sn->value;
   if (!str) return;
 
   _strings_buf = strapp(_strings_buf, "<si>");
@@ -4893,11 +4896,14 @@ static void libo_xl_col_fill(libo_xl_sheet *sheet, int row, int max_col)
 
 static void string_dumper(avl_node *n)
 {
+  string_node *sn;
   string *str = NULL;
 
   if (!n) return;
 
-  str = (string *)n->value;
+  sn = (string_node *)n;
+
+  str = &sn->value;
 
   do_indent(_dumper_file, _strings_indent);
   fprintf(_dumper_file,
