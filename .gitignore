@@ -19,3 +19,4 @@ windows/*.exe
 windows/*.obj
 windows/*.a
 windows/*.lib
+TEST-CREATION.xlsx

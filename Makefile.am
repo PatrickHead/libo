@@ -31,6 +31,7 @@ super-clean: clean distclean
 	@rm -f configure
 	@rm -rf src/.deps
 	@rm -f texput.log
+	@rm -f TEST-CREATION.xlsx
 
 include amdoxygen.am
 
